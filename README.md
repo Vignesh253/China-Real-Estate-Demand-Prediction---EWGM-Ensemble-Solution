@@ -1,4 +1,5 @@
-# China-Real-Estate-Demand-Prediction---EWGM-Ensemble-Solution
+# China-Real-Estate-Demand-Prediction---EWGM-Ensemble-Solution     A KAGGLE competitions Real Estate Demand Prediction
+China's first real-estate demand prediction challenge, developing models to forecast housing demand and guide real investment decisions.
 
 # Competition Solution
 
@@ -45,5 +46,5 @@ Our winning formula combines two powerful components:
 
 ### Installation
 
-####  try to run the python_code_.ipynb   code in kaggle notebook  or colab 
+####  try to run the python_code_.py  code in kaggle notebook  or colab 
 
