@@ -1,0 +1,20 @@
+
+Configuration & Hyperparameters
+
+### Core Parameters
+
+| Parameter | Value | Description | Tuning Notes |
+|-----------|-------|-------------|--------------|
+| `SEED` | 42 | Random seed for NumPy | For reproducibility |
+| `alpha` | 0.5 | EWGM decay rate | Tested: [0.3, 0.5, 0.7, 0.9] |
+| `n_lags` | 12 | Lookback window (months) | Covers full annual cycle |
+| `t2` | 10 | Dead sector detection window | Last 10 months |
+| `allow_zeros` | 2 | Zero tolerance threshold | Max 2 zeros in last 10 months |
+| `clip_low` | 0.85 | December multiplier minimum | Prevents over-dampening |
+| `clip_high` | 1.40 | December multiplier maximum | Prevents over-amplification |
+| `last_value_weight` | 0.34 | Weight for most recent value | Optimized via CV |
+| `ewgm_weight` | 0.34 | Weight for EWGM | Optimized via CV |
+
+### Determinism & Reproducibility
+
+**Random Seed Control**:

@@ -1,0 +1,51 @@
+ Kaggle Notebook (Exact Reproduction)
+
+1. Go to: https://www.kaggle.com/code
+2. Create New Notebook
+3. Add Data Source: "China Real Estate Demand Prediction" competition
+4. Copy code from `notebooks/kaggle_submission.ipynb`
+5. **Settings**:
+   - Accelerator: GPU T4 (optional, not required)
+   - Internet: ON
+   - Language: Python 3.11
+6. Run All Cells
+7. Submit `submission.csv` from Output
+
+**Expected Kaggle Runtime**: ~1 second (notebook initialization: ~30 seconds)
+
+---
+
+## 🧠 Methodology
+
+### Mathematical Foundation
+
+#### 1. Time Encoding
+
+We convert calendar dates to a continuous time index for easier computation:
+
+\[
+\text{time} = (\text{year} - 2019) \times 12 + \text{month\_num} - 1
+\]
+
+**Example**: 2024-Aug → time = (2024-2019)×12 + 8 - 1 = 67
+
+**Why**: Enables direct indexing and modular arithmetic for seasonality detection.
+
+---
+
+#### 2. Exponentially Weighted Geometric Mean (EWGM)
+
+For each sector \(s\) and lag window of \(n\) months, EWGM is calculated as:
+
+\[
+\text{EWGM}_s = \exp\left(\sum_{i=1}^{n} w_i \cdot \ln(x_i + \epsilon)\right)
+\]
+
+Where:
+- \(x_i\) = transaction amount at lag \(i\) (most recent = \(x_1\))
+- \(w_i = \frac{\alpha^{n-i}}{\sum_{j=1}^{n} \alpha^{n-j}}\) = normalized exponential weight
+- \(\alpha = 0.5\) = decay parameter (higher α = more weight on recent values)
+- \(\epsilon = 10^{-12}\) = numerical stability constant
+- \(n = 12\) months = lookback window
+
+**Weight Distribution Example** (α=0.5, n=12):

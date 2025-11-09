@@ -1,0 +1,83 @@
+# ============================================================================
+# KAGGLE SUBMISSION - REQUIREMENTS FILE
+# Competition: China Real Estate Demand Prediction
+# Python Version: 3.11.13
+# Environment: Kaggle Notebook (GPU T4 optional, not required)
+# ============================================================================
+
+# CORE DEPENDENCIES (Required)
+# ----------------------------------------------------------------------------
+numpy==1.26.4          # Numerical computing, array operations, EWGM calculations
+pandas==2.2.2          # Data manipulation, CSV I/O, DataFrame operations
+
+# OPTIONAL (Not needed for submission, Kaggle provides these)
+# ----------------------------------------------------------------------------
+# jupyter==1.0.0       # Interactive notebook (pre-installed on Kaggle)
+# ipykernel==6.29.3    # Jupyter kernel (pre-installed on Kaggle)
+
+# ============================================================================
+# INSTALLATION INSTRUCTIONS (Local Development Only)
+# ============================================================================
+# 
+# For local testing (not needed on Kaggle):
+# 
+# 1. Create virtual environment:
+#    python3.11 -m venv venv
+#    source venv/bin/activate  # Linux/Mac
+#    venv\Scripts\activate     # Windows
+#
+# 2. Install dependencies:
+#    pip install -r requirements.txt
+#
+# 3. Verify installation:
+#    python -c "import numpy, pandas; print('Success!')"
+#
+# ============================================================================
+# KAGGLE NOTEBOOK SETUP
+# ============================================================================
+#
+# These packages are PRE-INSTALLED on Kaggle notebooks.
+# No requirements.txt needed when running on Kaggle platform.
+#
+# Kaggle Environment Specs:
+# - Python: 3.11.13
+# - NumPy: 1.26.4 (pre-installed)
+# - Pandas: 2.2.2 (pre-installed)
+# - Accelerator: GPU T4 (optional - not used by this solution)
+# - Internet: ON (for data access)
+# - RAM: 16GB
+# - Runtime: ~1-5 seconds
+#
+# ============================================================================
+# PACKAGE DETAILS
+# ============================================================================
+
+# NumPy 1.26.4
+# ------------
+# Purpose: 
+#   - Exponential weight calculation: np.array([alpha**(n-1-i) for i in range(n)])
+#   - Log/exp transformations: np.log(), np.exp()
+#   - Statistical operations: np.sum(), np.median(), np.percentile()
+#   - Array indexing and masking
+# License: BSD-3-Clause
+# Size: ~15MB
+
+# Pandas 2.2.2
+# ------------
+# Purpose:
+#   - CSV reading: pd.read_csv()
+#   - DataFrame operations: .pivot(), .unstack(), .merge()
+#   - Time series handling: .tail(n), .shift()
+#   - Aggregations: .mean(), .sum(), .fillna()
+# License: BSD-3-Clause
+# Size: ~135MB
+
+# ============================================================================
+# TOTAL INSTALLATION SIZE: ~150MB
+# INSTALLATION TIME: ~30 seconds on standard connection
+# ============================================================================
+
+# NO EXTERNAL DATA REQUIRED - Competition data only
+# NO PRE-TRAINED MODELS - Algorithm is from scratch
+# NO GPU REQUIRED - Pure CPU solution
+# FULLY DETERMINISTIC - Same input → identical output

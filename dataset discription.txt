@@ -1,0 +1,31 @@
+
+### Dataset Description
+
+**train/new_house_transactions.csv** (Historical Data)
+- **Columns**: `month`, `sector`, `amount_new_house_transactions`
+- **Shape**: ~6,432 rows (67 months × 96 sectors)
+- **Time Range**: January 2019 – July 2024
+- **Format**: `month` in "YYYY-Mon" format (e.g., "2019-Jan")
+
+**test.csv** (Prediction Targets)
+- **Columns**: `id`
+- **Format**: `id` = "YYYY-Mon_sector_XX" (e.g., "2024-Aug_sector_15")
+- **Shape**: 1,152 rows (12 months × 96 sectors)
+- **Prediction Period**: August 2024 – July 2025
+
+**sample_submission.csv**
+- **Columns**: `id`, `new_house_transaction_amount`
+- **Format**: Required submission format
+
+### External Data/Resources
+
+**✅ NONE** - This solution uses **ONLY** competition-provided data, ensuring full compliance with competition rules.
+
+---
+
+## 🚀 Reproducing Results
+
+### Step-by-Step Execution
+
+#### Method 1: Run Python Script
+
