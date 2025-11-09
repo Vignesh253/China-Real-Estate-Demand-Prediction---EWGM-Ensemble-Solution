@@ -19,13 +19,12 @@
 
 ### External Data/Resources
 
-**✅ NONE** - This solution uses **ONLY** competition-provided data, ensuring full compliance with competition rules.
+** NONE** - This solution uses **ONLY** competition-provided data, ensuring full compliance with competition rules.
 
----
-
-## 🚀 Reproducing Results
+--
 
 ### Step-by-Step Execution
 
-#### Method 1: Run Python Script
+#### Method 1: Run Python Script python_code.ipynb in kaggle or colab
+
 
