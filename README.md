@@ -1,6 +1,6 @@
 # China-Real-Estate-Demand-Prediction---EWGM-Ensemble-Solution
 
-# China Real Estate Demand Prediction - Competition Solution
+# Competition Solution
 
 ##  Solution Overview
 
@@ -39,9 +39,9 @@ Our winning formula combines two powerful components:
 
 - **OS**: Linux (Ubuntu 20.04+), Windows 10+, or macOS 11+
 - **Python**: 3.11.13 (tested and recommended)
-- **RAM**: Minimum 4GB, Recommended 8GB+
-- **GPU**: Optional (NVIDIA Tesla T4 or equivalent) - used for Kaggle Notebook execution
-- **Disk Space**: ~500MB for environment + data
+- **RAM**: Minimum 4GB, Recommended 8GB+   even less alos ok for this as this not uses that ,uch computataional power
+- **GPU**: Optional (NVIDIA Tesla T4 or equivalent) - used for Kaggle Notebook execution  or even CPU is also ok 
+- **Disk Space**: ~500MB for environment + data or even less also ok 
 
 ### Installation
 
