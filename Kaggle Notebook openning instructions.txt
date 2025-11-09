@@ -1,15 +1,16 @@
- Kaggle Notebook (Exact Reproduction)
+ Kaggle Notebook (Exact Reproduction)  or you can also run this on colab also 
 
 1. Go to: https://www.kaggle.com/code
 2. Create New Notebook
 3. Add Data Source: "China Real Estate Demand Prediction" competition
-4. Copy code from `notebooks/kaggle_submission.ipynb`
+4. Copy code from `notebooks/kaggle_submission.py`
 5. **Settings**:
    - Accelerator: GPU T4 (optional, not required)
    - Internet: ON
    - Language: Python 3.11
-6. Run All Cells
+6. Run All Cells    even if the code is not in cell formate you can either copy accordingly part by part for more easy 
 7. Submit `submission.csv` from Output
 
 **Expected Kaggle Runtime**: ~1 second (notebook initialization: ~30 seconds)
+
 
