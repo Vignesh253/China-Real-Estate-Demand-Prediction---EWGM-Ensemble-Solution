@@ -45,5 +45,5 @@ Our winning formula combines two powerful components:
 
 ### Installation
 
-#### Option 1: Using requirements.txt (Recommended)
+####  try to run the python_code_.ipynb   code in kaggle notebook  or colab 
 
