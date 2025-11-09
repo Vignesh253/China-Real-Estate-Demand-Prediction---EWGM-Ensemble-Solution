@@ -25,6 +25,7 @@
 
 ### Step-by-Step Execution
 
-#### Method 1: Run Python Script python_code.ipynb in kaggle or colab
+#### Method 1: Run Python Script python_code.py in kaggle or colab
+
 
 
